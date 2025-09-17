@@ -120,6 +120,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     observeElements() {
+      // Header elements
+      this.addAnimation('header', 'animate-fade-in', 0.1);
+      
       // Hero section elements
       this.addAnimation('.hero-content h1', 'animate-fade-in', 0.2);
       this.addAnimation('.hero-content .text-outline', 'animate-fade-in', 0.4);

@@ -219,6 +219,20 @@
         body.loaded .hero-content .flex.flex-wrap {
             transition: all 0.8s cubic-bezier(0.17, 0.67, 0.83, 0.67);
         }
+        
+        /* Pulse glow animation for primary CTA */
+        .animate-pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(47, 103, 255, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 0 8px rgba(47, 103, 255, 0);
+            }
+        }
     </style>
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%232f67ff'/><text x='50' y='58' font-size='52' text-anchor='middle' fill='white' font-family='Arial'>D</text></svg>">
@@ -264,15 +278,15 @@
                 </nav>
                 <div class="hidden md:flex items-center gap-3">
                     <a href="#contact"
-                        class="px-5 py-2 rounded border border-slate-300 hover:bg-slate-50 text-base font-medium">Let's
+                        class="px-5 py-2 rounded border border-slate-300 hover:bg-slate-50 text-base font-medium animate-hover-lift transition-all duration-300 hover:border-primary-600 hover:text-primary-600">Let's
                         Collaborate</a>
                     <a href="#work"
-                        class="px-5 py-2 rounded bg-primary-600 text-white hover:bg-primary-700 text-base font-medium">Explore
+                        class="px-5 py-2 rounded bg-primary-600 text-white hover:bg-primary-700 text-base font-medium animate-hover-lift animate-hover-glow animate-pulse-glow transition-all duration-300">Explore
                         Our
                         Work</a>
                 </div>
                 <button id="mobileMenuBtn"
-                    class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded border border-slate-300">
+                    class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded border border-slate-300 animate-hover-lift transition-all duration-300 hover:border-primary-600 hover:bg-primary-50">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -288,7 +302,7 @@
                 <a href="#products" class="py-1">Products</a>
                 <a href="#insights" class="py-1">Insights</a>
                 <a href="#about" class="py-1">About</a>
-                <a href="#contact" class="py-2 mt-2 rounded bg-primary-600 text-white text-center">Let's Collaborate</a>
+                <a href="#contact" class="py-2 mt-2 rounded bg-primary-600 text-white text-center animate-hover-lift animate-hover-glow transition-all duration-300">Let's Collaborate</a>
             </div>
         </div>
     </header>
