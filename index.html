@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Samadhan Digitech - Growth Partners</title>
+    <meta name="description"
+        content="Award-winning films, high-performance digital campaigns, and transformative IT solutions. Stories. Strategy. Software.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eef5ff',
+                            100: '#dbeaff',
+                            200: '#b9d3ff',
+                            300: '#8db6ff',
+                            400: '#5c90ff',
+                            500: '#2f67ff',
+                            600: '#1f4fe6',
+                            700: '#1a3dcc',
+                            800: '#1834a3',
+                            900: '#172f80'
+                        },
+                        accent: '#ff6b4a',
+                        ink: '#0f172a'
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
+                    },
+                    boxShadow: {
+                        soft: '0 10px 30px rgba(2, 6, 23, 0.12)'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .grid-bg {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+            background-size: 20px 20px;
+            background-position: -10px -10px;
+        }
+
+        .text-outline {
+            -webkit-text-stroke: 2px #b9d3ff;
+            color: transparent;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .banner-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .banner-shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .banner-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            height: 80%;
+        }
+
+        .banner-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .floating-circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-circle:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-circle:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .floating-circle:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            bottom: 30%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-image-container {
+            position: relative;
+            z-index: 5;
+        }
+    </style>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%232f67ff'/><text x='50' y='58' font-size='52' text-anchor='middle' fill='white' font-family='Arial'>D</text></svg>">
+</head>
+
+<body class="font-sans text-slate-800 bg-white">
+    <!-- Top bar -->
+    <div class="hidden md:block bg-slate-900 text-white text-sm">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-6 opacity-80">
+                <span class="font-medium">Trusted tech partner</span>
+                <span class="hidden sm:inline font-medium">Consulting • Products • Integration • Support</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hover:underline font-medium">Contact</a>
+                <a href="#" class="opacity-70 pointer-events-none font-medium">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="#home" class="flex items-center gap-2 font-extrabold text-primary-700 text-xl">
+                    <span
+                        class="inline-flex h-10 w-10 items-center justify-center rounded bg-primary-600 text-white text-lg">S</span>
+                    <span>Samadhan Digitech</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8 text-base font-medium">
+                    <a href="#solutions" class="hover:text-primary-600">Solutions</a>
+                    <a href="#services" class="hover:text-primary-600">Services</a>
+                    <a href="#products" class="hover:text-primary-600">Products</a>
+                    <a href="#insights" class="hover:text-primary-600">Insights</a>
+                    <a href="#about" class="hover:text-primary-600">About</a>
+                </nav>
+                <div class="hidden md:flex items-center gap-3">
+                    <a href="#contact" class="px-5 py-2 rounded border border-slate-300 hover:bg-slate-50 text-base font-medium">Let's
+                        Collaborate</a>
+                    <a href="#work" class="px-5 py-2 rounded bg-primary-600 text-white hover:bg-primary-700 text-base font-medium">Explore Our
+                        Work</a>
+                </div>
+                <button id="mobileMenuBtn"
+                    class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded border border-slate-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 bg-white">
+            <div class="px-4 py-3 flex flex-col gap-3 text-base font-medium">
+                <a href="#solutions" class="py-1">Solutions</a>
+                <a href="#services" class="py-1">Services</a>
+                <a href="#products" class="py-1">Products</a>
+                <a href="#insights" class="py-1">Insights</a>
+                <a href="#about" class="py-1">About</a>
+                <a href="#contact" class="py-2 mt-2 rounded bg-primary-600 text-white text-center">Let's Collaborate</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="relative hero-bg text-white overflow-hidden">
+        <div class="h-screen flex items-center">
+            <!-- Floating Elements -->
+            <div class="floating-elements">
+                <div class="floating-circle"></div>
+                <div class="floating-circle"></div>
+                <div class="floating-circle"></div>
+            </div>
+
+            <div class="ml-24 mx-auto px-4 w-full relative pe-0">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="hero-content space-y-6">
+                        <p class="uppercase tracking-widest text-white/80 text-xs mb-2 font-medium">
+                            Lights. Camera. Impact. </p>
+
+                        <div class="space-y-2">
+                            <h1 class="font-black leading-[1.05] tracking-tight">
+                                <span class="block text-6xl md:text-7xl">Where </span>
+                                <span class="block text-6xl md:text-7xl mt-2">Creativity Meets</span>
+                            </h1>
+
+                            <div class="space-y-1">
+                                <p class="mt-5 text-4xl md:text-6xl font-black text-outline mb-3">Technology.</p>
+                                <p class="text-white/90 max-w-xl leading-relaxed text-sm md:text-base">
+                                    At Samadhan Digitech, we are not just service providers—we are growth partners. From
+                                    producing award-winning films to running high-performance digital campaigns and
+                                    building
+                                    transformative IT solutions, we empower brands, institutions, and startups to stand
+                                    out
+                                    in today's competitive world.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-3 pt-2">
+                            <a href="#work"
+                                class="px-4 py-2 rounded bg-white text-primary-700 font-semibold hover:bg-primary-50 text-sm">Unlock
+                                Your Potential Today!</a>
+                            <a href="#contact"
+                                class="px-4 py-2 rounded border border-white/30 text-white hover:bg-white/10 bg-transparent text-sm">Let's
+                                Collaborate</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-image-container relative overflow-hidden">
+                        <div class="absolute -top-4 left-6 flex gap-1 z-10">
+                            <span class="h-1.5 w-1.5 rounded-full bg-white/70"></span>
+                            <span class="h-1.5 w-1.5 rounded-full bg-white/70"></span>
+                            <span class="h-1.5 w-1.5 rounded-full bg-white/70"></span>
+                        </div>
+
+                        <div class="relative h-[47rem] w-full">
+                            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out" id="slide1">
+                                <div class="banner-container">
+                                    <img src="https://samadhandigitech.com/uploads/img/general/banner-shape.png"
+                                        alt="Banner Shape" class="banner-shape">
+                                    <div class="banner-img">
+                                        <img src="https://samadhandigitech.com/uploads/img/general/hero-img.png"
+                                            alt="Hero Image" class="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0"
+                                id="slide2">
+                                <img src="https://iid.org.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FPHON.a01d6a83.png&w=3840&q=75"
+                                    alt="Department Meeting" class="w-full h-full object-contain">
+                            </div>
+                            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0"
+                                id="slide3">
+                                <img src="https://iid.org.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FPHON.a01d6a83.png&w=3840&q=75"
+                                    alt="Department Meeting" class="w-full h-full object-contain">
+                            </div>
+                        </div>
+
+                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2">
+                            <button class="w-2 h-2 rounded-full bg-white/90 transition-all duration-300"
+                                id="indicator1"></button>
+                            <button class="w-2 h-2 rounded-full bg-white/30 transition-all duration-300"
+                                id="indicator2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trusted Partners & Certifications -->
+        
+        <section class="relative -mt-[5rem] z-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <!-- White curved shape that bridges hero and CTA -->
+                <div class="relative">
+                    <!-- Main white curved container - extends into both sections -->
+                    <div class="bg-white rounded-t-[3rem] rounded-b-[3rem] shadow-2xl overflow-hidden relative">
+                        <!-- Top Section - Certifications (Purple area) -->
+                        <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 pb-12">
+                            <div class="grid md:grid-cols-3 gap-8">
+                                <!-- ISO 9001:2015 -->
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                            <div class="text-blue-600 font-bold text-sm">ISO</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="text-blue-600 font-semibold text-sm mb-1">9001:2015</div>
+                                        <div class="text-slate-800 font-semibold text-lg mb-1">Assurance of Quality
+                                            Delivery.</div>
+                                        <div class="text-slate-600 text-sm">ISO 9001:2015 Certified</div>
+                                    </div>
+                                </div>
+          
+                                <!-- ISO 27001:2013 -->
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                            <div class="text-blue-600 font-bold text-sm">ISO</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="text-blue-600 font-semibold text-sm mb-1">IEC 27001:2013</div>
+                                        <div class="text-slate-800 font-semibold text-lg mb-1">Adherence to Security
+                                            Compliance</div>
+                                        <div class="text-slate-600 text-sm">ISO 27001:2013 Certified</div>
+                                    </div>
+                                </div>
+          
+                                <!-- CMMI Level 3 -->
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                            <div class="text-blue-600 font-bold text-xs">CMMI</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="text-blue-600 font-semibold text-sm mb-1">CMMIDEV/3</div>
+                                        <div class="text-slate-800 font-semibold text-lg mb-1">CMMI Maturity Level 3
+                                        </div>
+                                        <div class="text-slate-600 text-sm">Compliant with Standard CMMI Appraisal
+                                            Method for Process Improvement</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+          
+                        <!-- Trusted by businesses worldwide - At color transition point -->
+                        <div class="relative -my-6 z-10">
+                            <div class="flex justify-center">
+                                <div
+                                    class="bg-white rounded-full px-6 py-3 text-sm text-slate-700 font-semibold shadow-lg border border-slate-200">
+                                    Trusted by businesses worldwide
+                                </div>
+                            </div>
+          
+                        </div>
+          
+                        <!-- Bottom Section - Partner Logos (Slate area) -->
+                        <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-8 pt-12">
+                            <div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center">
+                                <div class="text-center">
+                                    <div
+                                        class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                                        <div class="text-blue-600 font-bold text-xs text-center">CLIMATE & CLEAN AIR
+                                            COALITION</div>
+                                    </div>
+                                    <div class="text-xs text-slate-600">TO REDUCE SHORT-LIVED CLIMATE POLLUTANTS</div>
+                                </div>
+          
+                                <div class="text-center">
+                                    <div class="text-blue-600 font-bold text-lg mb-1">Catapooolt</div>
+                                    <div class="text-xs text-slate-600">Empowering Beliefs/Engaging Communities</div>
+                                </div>
+          
+                                <div class="text-center">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-blue-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <div class="text-white font-bold text-sm">B4W</div>
+                                    </div>
+                                    <div class="text-xs text-slate-600">Miles to go with..</div>
+                                </div>
+          
+                                <div class="text-center">
+                                    <div class="text-blue-600 font-bold text-lg mb-1">Beeaar Hyundai</div>
+                                    <div class="text-xs text-slate-600">Think Hyundai Think Beeaar</div>
+                                </div>
+          
+                                <div class="text-center">
+                                    <div class="text-red-600 font-bold text-lg mb-1">giz</div>
+                                    <div class="text-xs text-slate-600">Deutsche Gesellschaft für Internationale
+                                        Zusammenarbeit (GIZ) GmbH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+        <!-- Call to Action -->
+        <section class="py-16 bg-slate-800 relative -mt-24 pt-[10.5rem]">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">
+                    Schedule a free call with our technology expert to discuss about your business idea
+                </h2>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button
+                        class="px-8 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-colors">
+                        Explore More
+                    </button>
+                    <button
+                        class="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center hover:bg-red-700 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Decorative element -->
+            <div class="absolute bottom-4 right-4 text-red-500 text-2xl">*</div>
+        </section>
+
+        <!-- Services tiles -->
+        <section id="services" class="py-16 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 pe-0">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-ink">Stories. Strategy. Software.</h2>
+                    <p class="mt-3 text-slate-600">In today’s digital-first world, every business needs a partner who
+                        can blend technology, creativity, and strategy to create impact. That’s who we are.</p>
+                </div>
+                <div class="mt-10 grid sm:grid-cols-2 gap-6">
+                    <!-- Media Production Service Card -->
+                    <div class="rounded-2xl bg-gradient-to-br from-orange-50 to-orange-100 p-8 shadow-lg">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 rounded-xl bg-orange-200 flex items-center justify-center">
+                                    <div class="text-2xl">🎬</div>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-slate-800 mb-2">Media Production Service</h3>
+                                <p class="text-slate-700 text-sm mb-4">Corporate films, ad films, documentaries, OTT shows, photography, animations, and studio rentals.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Digital Marketing Card -->
+                    <div class="rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 p-8 shadow-lg">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 rounded-xl bg-blue-200 flex items-center justify-center">
+                                    <div class="text-2xl">📱</div>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-slate-800 mb-2">Digital Marketing</h3>
+                                <p class="text-slate-700 text-sm mb-4">SEO, social media, paid ads, influencer collaborations, and performance-driven campaigns.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IT Services Card -->
+                    <div class="rounded-2xl bg-gradient-to-br from-green-50 to-green-100 p-8 shadow-lg">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 rounded-xl bg-green-200 flex items-center justify-center">
+                                    <div class="text-2xl">💻</div>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-slate-800 mb-2">IT Services</h3>
+                                <p class="text-slate-700 text-sm mb-4">Websites, mobile apps, software, ERP, cloud, and AI-powered solutions.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Solutions Card -->
+                    <div class="rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100 p-8 shadow-lg">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 rounded-xl bg-purple-200 flex items-center justify-center">
+                                    <div class="text-2xl">🚀</div>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-slate-800 mb-2">AI Solutions</h3>
+                                <p class="text-slate-700 text-sm mb-4">AI-powered chatbots, voice assistants, and predictive analytics.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Showcase / Solutions -->
+        <section id="solutions" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center max-w-4xl mx-auto mb-12">
+                    <p class="uppercase tracking-widest text-primary-600 text-xs mb-4">Our Expertise</p>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-ink mb-6">Bringing Ideas to Life Through Technology & Creativity</h2>
+                    <p class="text-lg text-slate-600">From government campaigns to startup showcases, we deliver content and solutions that inspire, educate, and engage audiences worldwide.</p>
+                </div>
+
+                <!-- Core Services Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                    <!-- Media Production -->
+                    <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6 shadow-lg">
+                        <div class="w-12 h-12 bg-orange-200 rounded-xl flex items-center justify-center mb-4">
+                            <span class="text-2xl">🎬</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-3">Media Production</h3>
+                        <ul class="text-sm text-slate-700 space-y-2">
+                            <li>• Corporate Films & AVs</li>
+                            <li>• Ad Films & Commercials</li>
+                            <li>• Documentaries & OTT Shows</li>
+                            <li>• Animation & VFX</li>
+                        </ul>
+                    </div>
+
+                    <!-- Digital Marketing -->
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 shadow-lg">
+                        <div class="w-12 h-12 bg-blue-200 rounded-xl flex items-center justify-center mb-4">
+                            <span class="text-2xl">📲</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-3">Digital Marketing</h3>
+                        <ul class="text-sm text-slate-700 space-y-2">
+                            <li>• SEO & Performance Marketing</li>
+                            <li>• Social Media & Influencer</li>
+                            <li>• Content Strategy & ORM</li>
+                            <li>• Analytics & Growth</li>
+                        </ul>
+                    </div>
+
+                    <!-- IT Services -->
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 shadow-lg">
+                        <div class="w-12 h-12 bg-green-200 rounded-xl flex items-center justify-center mb-4">
+                            <span class="text-2xl">💻</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-3">IT Services</h3>
+                        <ul class="text-sm text-slate-700 space-y-2">
+                            <li>• Web & Mobile Development</li>
+                            <li>• Custom Software & ERP</li>
+                            <li>• Cloud & Cybersecurity</li>
+                            <li>• AI/ML & Analytics</li>
+                        </ul>
+                    </div>
+
+                    <!-- Studio Rental -->
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 shadow-lg">
+                        <div class="w-12 h-12 bg-purple-200 rounded-xl flex items-center justify-center mb-4">
+                            <span class="text-2xl">🎥</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-3">Studio Rental</h3>
+                        <ul class="text-sm text-slate-700 space-y-2">
+                            <li>• Professional Lighting</li>
+                            <li>• Green Screen Setup</li>
+                            <li>• Live Streaming Ready</li>
+                            <li>• Crew & Equipment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Portfolio Showcase -->
+                <div class="bg-slate-50 rounded-3xl p-8">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-8 text-center">Trusted by Leading Organizations</h3>
+                    
+                    <!-- Government Projects -->
+                    <div class="mb-8">
+                        <h4 class="text-lg font-semibold text-slate-700 mb-4">Government Projects</h4>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                                <div class="w-fit h-20 mx-auto mb-3 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/120px-Emblem_of_India.svg.png" alt="MoRD" class="w-16 h-16 object-contain">
+                                </div>
+                                <div class="text-blue-600 font-semibold text-sm">MoRD</div>
+                                <div class="text-xs text-slate-600">Lakhpati Didi</div>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                                <div class="w-fit h-20 mx-auto mb-3 bg-gradient-to-br from-green-100 to-green-200 rounded-lg flex items-center justify-center">
+                                    <img src="https://samadhandigitech.com/uploads/img/testimonial/1706870779-Udyamlogo.png" alt="CSIR" class="w-18 h-16 object-contain">
+                                </div>
+                                <div class="text-blue-600 font-semibold text-sm">CSIR</div>
+                                <div class="text-xs text-slate-600">75 Years Journey Film</div>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                                <div class="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Khadi_India_logo.svg/120px-Khadi_India_logo.svg.png" alt="Khadi India" class="w-10 h-10 object-contain">
+                                </div>
+                                <div class="text-blue-600 font-semibold text-sm">Khadi India</div>
+                                <div class="text-xs text-slate-600">National Campaign</div>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                                <div class="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/G20_India_2023_logo.svg/120px-G20_India_2023_logo.svg.png" alt="G20 Summit" class="w-10 h-10 object-contain">
+                                </div>
+                                <div class="text-blue-600 font-semibold text-sm">G20 Summit</div>
+                                <div class="text-xs text-slate-600">Coverage</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Corporate Brands -->
+                    <div class="mb-8">
+                        <h4 class="text-lg font-semibold text-slate-700 mb-4">Corporate & Startup Brands</h4>
+                        <div class="grid sm:grid-cols-3 lg:grid-cols-6 gap-3">
+                            <div class="bg-white rounded-lg p-3 text-center shadow-sm">
+                                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Burger_King_logo.svg/120px-Burger_King_logo.svg.png" alt="Burger Singh" class="w-8 h-8 object-contain">
+                                </div>
+                                <div class="text-slate-700 font-medium text-xs">Burger Singh</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-3 text-center shadow-sm">
+                                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-red-100 to-red-200 rounded-lg flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Bata_logo.svg/120px-Bata_logo.svg.png" alt="Bata" class="w-8 h-8 object-contain">
+                                </div>
+                                <div class="text-slate-700 font-medium text-xs">Bata</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-3 text-center shadow-sm">
+                                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-amber-100 to-amber-200 rounded-lg flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Jaipur_Rugs_logo.svg/120px-Jaipur_Rugs_logo.svg.png" alt="Jaipur Rugs" class="w-8 h-8 object-contain">
+                                </div>
+                                <div class="text-slate-700 font-medium text-xs">Jaipur Rugs</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-3 text-center shadow-sm">
+                                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ustraa_logo.svg/120px-Ustraa_logo.svg.png" alt="Ustraa" class="w-8 h-8 object-contain">
+                                </div>
+                                <div class="text-slate-700 font-medium text-xs">Ustraa</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-3 text-center shadow-sm">
+                                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Paytm_logo.svg/120px-Paytm_logo.svg.png" alt="Paytm" class="w-8 h-8 object-contain">
+                                </div>
+                                <div class="text-slate-700 font-medium text-xs">Paytm</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-3 text-center shadow-sm">
+                                <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-green-100 to-green-200 rounded-lg flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/OfBusiness_logo.svg/120px-OfBusiness_logo.svg.png" alt="OfBusiness" class="w-8 h-8 object-contain">
+                                </div>
+                                <div class="text-slate-700 font-medium text-xs">OfBusiness</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Icons -->
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-700 mb-4">Featured Business Icons</h4>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                                <div class="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Vijay_Shekhar_Sharma.jpg/120px-Vijay_Shekhar_Sharma.jpg" alt="Vijay Shekhar Sharma" class="w-12 h-12 rounded-full object-cover">
+                                </div>
+                                <div class="text-slate-800 font-semibold text-sm">Vijay Shekhar Sharma</div>
+                                <div class="text-xs text-slate-600">Paytm Founder</div>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                                <div class="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ashish_Mohapatra.jpg/120px-Ashish_Mohapatra.jpg" alt="Ashish Mohapatra" class="w-12 h-12 rounded-full object-cover">
+                                </div>
+                                <div class="text-slate-800 font-semibold text-sm">Ashish Mohapatra</div>
+                                <div class="text-xs text-slate-600">OfBusiness</div>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                                <div class="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Sanjeev_Bikhchandani.jpg/120px-Sanjeev_Bikhchandani.jpg" alt="Sanjeev Bikhchandani" class="w-12 h-12 rounded-full object-cover">
+                                </div>
+                                <div class="text-slate-800 font-semibold text-sm">Sanjeev Bikhchandani</div>
+                                <div class="text-xs text-slate-600">Naukri.com</div>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                                <div class="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Arjun_Malhotra.jpg/120px-Arjun_Malhotra.jpg" alt="Arjun Malhotra" class="w-12 h-12 rounded-full object-cover">
+                                </div>
+                                <div class="text-slate-800 font-semibold text-sm">Arjun Malhotra</div>
+                                <div class="text-xs text-slate-600">HCL Cofounder</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="text-center mt-12">
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#cta" class="px-8 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                            View Our Showreel
+                        </a>
+                        <a href="#contact" class="px-8 py-3 border-2 border-primary-600 text-primary-600 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-colors">
+                            Let's Collaborate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Production Portfolio Showcase -->
+        <section id="production" class="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center max-w-4xl mx-auto mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/20 text-primary-300 text-sm font-medium mb-6">
+                        <span class="w-2 h-2 bg-primary-400 rounded-full"></span>
+                        Award-Winning Productions
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+                        Where <span class="text-primary-400">Creativity</span> Meets<br>
+                        <span class="text-primary-400">Technology</span>
+                    </h2>
+                    <p class="text-xl text-slate-300 leading-relaxed">
+                        From government campaigns to startup showcases, we deliver content that inspires, educates, and engages audiences worldwide.
+                    </p>
+                </div>
+
+                <!-- Production Categories -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    <!-- Government Projects -->
+                    <div class="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <span class="text-2xl">🏛️</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Government Projects</h3>
+                        <p class="text-slate-300 text-sm mb-4">Nationwide campaigns and institutional films that drive social impact.</p>
+                        <div class="space-y-2 text-xs text-slate-400">
+                            <div>• MoRD - Lakhpati Didi</div>
+                            <div>• CSIR - 75 Years Journey</div>
+                            <div>• Khadi India Campaign</div>
+                            <div>• G20 Summit Coverage</div>
+                        </div>
+                    </div>
+
+                    <!-- Corporate Brands -->
+                    <div class="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <span class="text-2xl">🏢</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Corporate Brands</h3>
+                        <p class="text-slate-300 text-sm mb-4">High-impact campaigns for leading brands and emerging startups.</p>
+                        <div class="space-y-2 text-xs text-slate-400">
+                            <div>• Burger Singh</div>
+                            <div>• Bata & Liberty Shoes</div>
+                            <div>• Jaipur Rugs</div>
+                            <div>• Ustraa & Paytm</div>
+                        </div>
+                    </div>
+
+                    <!-- Business Icons -->
+                    <div class="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <span class="text-2xl">👑</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Business Icons</h3>
+                        <p class="text-slate-300 text-sm mb-4">Exclusive interviews and features with industry leaders.</p>
+                        <div class="space-y-2 text-xs text-slate-400">
+                            <div>• Vijay Shekhar Sharma</div>
+                            <div>• Ashish Mohapatra</div>
+                            <div>• Sanjeev Bikhchandani</div>
+                            <div>• Arjun Malhotra</div>
+                        </div>
+                    </div>
+
+                    <!-- Event Coverage -->
+                    <div class="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <span class="text-2xl">🎪</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Event Coverage</h3>
+                        <p class="text-slate-300 text-sm mb-4">Live productions and event documentation for major occasions.</p>
+                        <div class="space-y-2 text-xs text-slate-400">
+                            <div>• G20 Summit</div>
+                            <div>• TedX Events</div>
+                            <div>• MSME Expos</div>
+                            <div>• IITF Coverage</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Showcase Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <!-- Featured Video 1 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 hover:scale-105 transition-transform duration-300">
+                        <div class="aspect-video bg-gradient-to-br from-blue-500/20 to-blue-700/20 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                            <h4 class="text-white font-bold text-lg mb-2">CSIR 75 Years Journey</h4>
+                            <p class="text-blue-200 text-sm">Documentary film showcasing India's scientific achievements</p>
+                        </div>
+                    </div>
+
+                    <!-- Featured Video 2 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-orange-600 to-orange-800 hover:scale-105 transition-transform duration-300">
+                        <div class="aspect-video bg-gradient-to-br from-orange-500/20 to-orange-700/20 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                            <h4 class="text-white font-bold text-lg mb-2">Burger Singh Brand Film</h4>
+                            <p class="text-orange-200 text-sm">High-energy commercial for India's leading QSR brand</p>
+                        </div>
+                    </div>
+
+                    <!-- Featured Video 3 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-600 to-purple-800 hover:scale-105 transition-transform duration-300">
+                        <div class="aspect-video bg-gradient-to-br from-purple-500/20 to-purple-700/20 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                            <h4 class="text-white font-bold text-lg mb-2">Vijay Shekhar Sharma</h4>
+                            <p class="text-purple-200 text-sm">Exclusive interview with Paytm founder</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                    <div class="text-center">
+                        <div class="text-4xl md:text-5xl font-bold text-primary-400 mb-2">150+</div>
+                        <div class="text-slate-300 font-medium">Projects Delivered</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl md:text-5xl font-bold text-primary-400 mb-2">10+</div>
+                        <div class="text-slate-300 font-medium">Years Experience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl md:text-5xl font-bold text-primary-400 mb-2">50+</div>
+                        <div class="text-slate-300 font-medium">Happy Clients</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl md:text-5xl font-bold text-primary-400 mb-2">24/7</div>
+                        <div class="text-slate-300 font-medium">Creative Support</div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="text-center">
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#work" class="px-8 py-4 rounded-xl bg-primary-600 text-white font-semibold text-lg hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            View Our Showreel
+                        </a>
+                        <a href="#contact" class="px-8 py-4 rounded-xl border-2 border-primary-400 text-primary-300 font-semibold text-lg hover:bg-primary-400 hover:text-white transition-all duration-300">
+                            Start Your Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customization / Integration -->
+        <!-- <section id="customization" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-extrabold text-ink">Customize, maintain, integrate, and upscale with ease
+                    </h2>
+                    <p class="mt-3 text-slate-600">Built to adapt to your ecosystem with seamless integrations and
+                        scalable
+                        operations.</p>
+                </div>
+                <div class="mt-10 grid lg:grid-cols-2 gap-6">
+                    <div class="rounded-xl bg-slate-50 p-6 shadow-soft min-h-[260px]"></div>
+                    <div class="rounded-xl bg-slate-50 p-6 shadow-soft min-h-[260px]"></div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Partners / Why choose us -->
+        <section id="about" class="py-16 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-800 mb-6">Trusted Partners</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                            <div class="h-20 rounded-lg bg-white shadow-soft flex items-center justify-center p-3 hover:shadow-md transition-shadow">
+                                <img src="https://samadhandigitech.com/uploads/img/testimonial/1706870779-Udyamlogo.png" alt="Udyam" class="max-w-full max-h-full object-contain">
+                            </div>
+                            <div class="h-20 rounded-lg bg-white shadow-soft flex items-center justify-center p-3 hover:shadow-md transition-shadow">
+                                <img src="https://samadhandigitech.com/uploads/img/testimonial/1704952024-iid%20(1).png" alt="IID" class="max-w-full max-h-full object-contain">
+                            </div>
+                            <div class="h-20 rounded-lg bg-white shadow-soft flex items-center justify-center p-3 hover:shadow-md transition-shadow">
+                                <img src="https://samadhandigitech.com/uploads/img/testimonial/1707206763-Hunar%20logo.png" alt="Hunar" class="max-w-full max-h-full object-contain">
+                            </div>
+                            <div class="h-20 rounded-lg bg-white shadow-soft flex items-center justify-center p-3 hover:shadow-md transition-shadow">
+                                <img src="https://samadhandigitech.com/uploads/img/testimonial/1706872774-odop%20(1).jpg" alt="Odop" class="max-w-full max-h-full object-contain">
+                            </div>
+                            <div class="h-20 rounded-lg bg-white shadow-soft flex items-center justify-center p-3 hover:shadow-md transition-shadow">
+                                <img src="https://samadhandigitech.com/uploads/img/testimonial/1707206763-Hunar%20logo.png" alt="Hunar" class="max-w-full max-h-full object-contain">
+                            </div>
+                            <div class="h-20 rounded-lg bg-white shadow-soft flex items-center justify-center p-3 hover:shadow-md transition-shadow">
+                                <img src="https://samadhandigitech.com/uploads/img/testimonial/1706774258-ekanaas.jpg" alt="Ekanaas" class="max-w-full max-h-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-800">Why Choose Samadhan Digitech?</h3>
+                        <ul class="mt-4 space-y-3 text-slate-600">
+                            <li class="flex gap-3"><span class="text-primary-600">✓</span> 10+ Years of Trust in Government, Corporates & Startups
+                            </li>
+                            <li class="flex gap-3"><span class="text-primary-600">✓</span> 150+ Projects Delivered across industries</li>
+                            <li class="flex gap-3"><span class="text-primary-600">✓</span> Pan-India Presence with International Reach</li>
+                            <li class="flex gap-3"><span class="text-primary-600">✓</span> End-to-End Capabilities (Media + Marketing + Tech)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="py-16 bg-gradient-to-br from-slate-50 to-primary-100">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left Column - Heading -->
+                    <div>
+                        <p class="uppercase tracking-widest text-slate-700 text-xs mb-4 font-semibold">TESTIMONIALS</p>
+                        <h2 class="text-4xl md:text-5xl font-bold text-primary-600 leading-tight drop-shadow-lg ">
+                            What our clients<br>
+                            <span class="text-primary-600">say!</span>
+                        </h2>
+                    </div>
+
+                    <!-- Right Column - Testimonial Content -->
+                    <div class="relative">
+                        <!-- Pagination Dot -->
+                        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                            <div class="w-2 h-2 bg-white rounded-full shadow-lg"></div>
+                        </div>
+
+                        <!-- Testimonial Card -->
+                        <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/20">
+                            <!-- Testimonial Text -->
+                            <blockquote class="text-slate-800 text-lg leading-relaxed mb-8 font-medium">
+                                "Samadhan Digitech has been an exceptional partner in our digital transformation journey. Their understanding of our business needs, combined with their creative approach to B2B marketing, has been outstanding. The team's professionalism, attention to detail, and commitment to delivering results have exceeded our expectations. They turned around world-class videos in less than 72 hours and created impactful sustainability campaigns that resonated with our audience."
+                            </blockquote>
+
+                            <!-- Client Info -->
+                            <div class="flex items-center gap-4">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100 ring-2 ring-white/50">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Jagdish Mitra" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <div class="font-bold text-slate-900 text-lg">Jagdish Mitra | Tech Mahindra</div>
+                                    <div class="text-slate-700 text-sm font-medium">Chief Strategy Officer & Head of Growth</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Arrows -->
+                        <div class="flex justify-end gap-2 mt-6">
+                            <button class="w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors shadow-lg border border-white/20">
+                                <svg class="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <button class="w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors shadow-lg border border-white/20">
+                                <svg class="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta" class="py-20 bg-gradient-to-br from-slate-50 to-primary-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center max-w-4xl mx-auto">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-6">
+                        <span class="w-2 h-2 bg-primary-600 rounded-full"></span>
+                        Ready to get started?
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-slate-800 mb-6 leading-tight">
+                        Building better solutions.<br>
+                        <span class="text-primary-600">Faster growth.</span>
+                    </h2>
+                    <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                        Let us help you optimize business processes, enhance productivity, and transform your digital presence with our comprehensive solutions.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a href="#contact" class="px-8 py-4 rounded-xl bg-primary-600 text-white font-semibold text-lg hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Request a Quote
+                        </a>
+                        <a href="#work" class="px-8 py-4 rounded-xl border-2 border-slate-300 text-slate-700 font-semibold text-lg hover:border-primary-600 hover:text-primary-600 transition-all duration-300 hover:bg-primary-50">
+                            View Our Work
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-slate-900 text-slate-200">
+            <div class="max-w-7xl mx-auto px-4 py-14">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div>
+                        <div class="flex items-center gap-2 font-extrabold text-white text-lg">
+                            <span
+                                class="inline-flex h-8 w-8 items-center justify-center rounded bg-primary-600 text-white">S</span>
+                            <span>Samadhan Digitech</span>
+                        </div>
+                        <p class="mt-3 text-sm text-slate-400">Growth partners empowering brands, institutions, and
+                            startups
+                            through stories, strategy, and software.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-white">Solutions</h4>
+                        <ul class="mt-3 space-y-2 text-sm">
+                            <li><a href="#solutions" class="hover:text-white">Overview</a></li>
+                            <li><a href="#analytics" class="hover:text-white">Analytics</a></li>
+                            <li><a href="#customization" class="hover:text-white">Integration</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-white">Company</h4>
+                        <ul class="mt-3 space-y-2 text-sm">
+                            <li><a href="#about" class="hover:text-white">About</a></li>
+                            <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-white">Resources</h4>
+                        <ul class="mt-3 space-y-2 text-sm">
+                            <li><a href="#" class="hover:text-white">Docs</a></li>
+                            <li><a href="#" class="hover:text-white">Privacy</a></li>
+                            <li><a href="#" class="hover:text-white">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-slate-400">
+                    <p>
+                        © <span id="year"></span> Samadhan Digitech. All rights reserved.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a href="#" aria-label="twitter" class="hover:text-white">Twitter</a>
+                        <a href="#" aria-label="linkedin" class="hover:text-white">LinkedIn</a>
+                        <a href="#" aria-label="github" class="hover:text-white">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
+</html>
