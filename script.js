@@ -64,6 +64,68 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Solutions dropdown functionality
+  const solutionsLink = document.getElementById('solutionsLink');
+  const solutionsDropdown = document.getElementById('solutionsDropdown');
+  const closeSolutionsDropdown = document.getElementById('closeSolutionsDropdown');
+  let isDropdownOpen = false;
+
+  function showDropdown() {
+    if (solutionsDropdown) {
+      solutionsDropdown.classList.remove('hidden');
+      // Force reflow to ensure the element is visible before animation
+      solutionsDropdown.offsetHeight;
+      solutionsDropdown.classList.remove('opacity-0', 'translate-y-[-20px]');
+      solutionsDropdown.classList.add('opacity-100', 'translate-y-0');
+      isDropdownOpen = true;
+    }
+  }
+
+  function hideDropdown() {
+    if (solutionsDropdown) {
+      solutionsDropdown.classList.remove('opacity-100', 'translate-y-0');
+      solutionsDropdown.classList.add('opacity-0', 'translate-y-[-20px]');
+      // Hide the element after animation completes
+      setTimeout(() => {
+        if (!isDropdownOpen && solutionsDropdown) {
+          solutionsDropdown.classList.add('hidden');
+        }
+      }, 300);
+      isDropdownOpen = false;
+    }
+  }
+  
+  if (solutionsLink && solutionsDropdown) {
+    solutionsLink.addEventListener('click', (e) => {
+      if (isDropdownOpen) {
+        hideDropdown();
+      } else {
+        showDropdown();
+      }
+    });
+
+    // Close button functionality
+    if (closeSolutionsDropdown) {
+      closeSolutionsDropdown.addEventListener('click', () => {
+        hideDropdown();
+      });
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (isDropdownOpen && !solutionsLink.contains(e.target) && !solutionsDropdown.contains(e.target)) {
+        hideDropdown();
+      }
+    });
+
+    // Close dropdown on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && isDropdownOpen) {
+        hideDropdown();
+      }
+    });
+  }
+
   // Smooth scroll for internal anchors
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
@@ -73,6 +135,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Close solutions dropdown when navigating
+        if (solutionsDropdown && isDropdownOpen) {
+          hideDropdown();
+        }
       }
     });
   });
