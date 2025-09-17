@@ -149,6 +149,76 @@
             position: relative;
             z-index: 5;
         }
+
+        /* Enhanced animation styles */
+        .animate-hover-lift {
+            transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        }
+        
+        .animate-hover-lift:hover {
+            transform: translateY(-8px);
+        }
+        
+        .animate-hover-scale {
+            transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        }
+        
+        .animate-hover-scale:hover {
+            transform: scale(1.05);
+        }
+        
+        .animate-hover-glow {
+            transition: box-shadow 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        }
+        
+        .animate-hover-glow:hover {
+            box-shadow: 0 20px 40px rgba(47, 103, 255, 0.15);
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Performance optimizations */
+        .animate-fade-in,
+        .animate-slide-up,
+        .animate-slide-left,
+        .animate-slide-right,
+        .animate-scale-in,
+        .animate-zoom-in {
+            will-change: transform, opacity;
+        }
+        
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            .animate-fade-in,
+            .animate-slide-up,
+            .animate-slide-left,
+            .animate-slide-right,
+            .animate-scale-in,
+            .animate-zoom-in {
+                transition: none;
+                opacity: 1;
+                transform: none;
+            }
+        }
+        
+        /* Page load animation */
+        body:not(.loaded) .hero-content h1,
+        body:not(.loaded) .hero-content .text-outline,
+        body:not(.loaded) .hero-content p:not(.text-outline),
+        body:not(.loaded) .hero-content .flex.flex-wrap {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        body.loaded .hero-content h1,
+        body.loaded .hero-content .text-outline,
+        body.loaded .hero-content p:not(.text-outline),
+        body.loaded .hero-content .flex.flex-wrap {
+            transition: all 0.8s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        }
     </style>
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%232f67ff'/><text x='50' y='58' font-size='52' text-anchor='middle' fill='white' font-family='Arial'>D</text></svg>">
@@ -260,10 +330,10 @@
 
                         <div class="flex flex-wrap gap-3 pt-2">
                             <a href="#work"
-                                class="px-4 py-2 rounded bg-white text-primary-700 font-semibold hover:bg-primary-50 text-sm">Unlock
+                                class="px-4 py-2 rounded bg-white text-primary-700 font-semibold hover:bg-primary-50 text-sm animate-hover-lift animate-hover-glow">Unlock
                                 Your Potential Today!</a>
                             <a href="#contact"
-                                class="px-4 py-2 rounded border border-white/30 text-white hover:bg-white/10 bg-transparent text-sm">Let's
+                                class="px-4 py-2 rounded border border-white/30 text-white hover:bg-white/10 bg-transparent text-sm animate-hover-lift">Let's
                                 Collaborate</a>
                         </div>
                     </div>
@@ -598,7 +668,7 @@
                 <!-- Core Services Grid -->
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
                     <!-- Media Production -->
-                    <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6 shadow-lg">
+                    <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6 shadow-lg animate-hover-lift animate-hover-glow">
                         <div class="w-12 h-12 bg-orange-200 rounded-xl flex items-center justify-center mb-4">
                             <span class="text-2xl">🎬</span>
                         </div>
@@ -612,7 +682,7 @@
                     </div>
 
                     <!-- Digital Marketing -->
-                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 shadow-lg">
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 shadow-lg animate-hover-lift animate-hover-glow">
                         <div class="w-12 h-12 bg-blue-200 rounded-xl flex items-center justify-center mb-4">
                             <span class="text-2xl">📲</span>
                         </div>
@@ -626,7 +696,7 @@
                     </div>
 
                     <!-- IT Services -->
-                    <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 shadow-lg">
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 shadow-lg animate-hover-lift animate-hover-glow">
                         <div class="w-12 h-12 bg-green-200 rounded-xl flex items-center justify-center mb-4">
                             <span class="text-2xl">💻</span>
                         </div>
@@ -640,7 +710,7 @@
                     </div>
 
                     <!-- Studio Rental -->
-                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 shadow-lg">
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 shadow-lg animate-hover-lift animate-hover-glow">
                         <div class="w-12 h-12 bg-purple-200 rounded-xl flex items-center justify-center mb-4">
                             <span class="text-2xl">🎥</span>
                         </div>
@@ -804,11 +874,11 @@
                 <div class="text-center mt-12">
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="#cta"
-                            class="px-8 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                            class="px-8 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors animate-hover-lift animate-hover-glow">
                             View Our Showreel
                         </a>
                         <a href="#contact"
-                            class="px-8 py-3 border-2 border-primary-600 text-primary-600 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-colors">
+                            class="px-8 py-3 border-2 border-primary-600 text-primary-600 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-colors animate-hover-lift">
                             Let's Collaborate
                         </a>
                     </div>
@@ -974,11 +1044,11 @@
                 <div class="text-center">
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="#work"
-                            class="px-8 py-4 rounded-xl bg-primary-600 text-white font-semibold text-lg hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            class="px-8 py-4 rounded-xl bg-primary-600 text-white font-semibold text-lg hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 animate-hover-lift animate-hover-glow">
                             View Our Showreel
                         </a>
                         <a href="#contact"
-                            class="px-8 py-4 rounded-xl border-2 border-primary-400 text-primary-300 font-semibold text-lg hover:bg-primary-400 hover:text-white transition-all duration-300">
+                            class="px-8 py-4 rounded-xl border-2 border-primary-400 text-primary-300 font-semibold text-lg hover:bg-primary-400 hover:text-white transition-all duration-300 animate-hover-lift">
                             Start Your Project
                         </a>
                     </div>
@@ -1151,11 +1221,11 @@
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <a href="#contact"
-                            class="px-8 py-4 rounded-xl bg-primary-600 text-white font-semibold text-lg hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            class="px-8 py-4 rounded-xl bg-primary-600 text-white font-semibold text-lg hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 animate-hover-lift animate-hover-glow">
                             Request a Quote
                         </a>
                         <a href="#work"
-                            class="px-8 py-4 rounded-xl border-2 border-slate-300 text-slate-700 font-semibold text-lg hover:border-primary-600 hover:text-primary-600 transition-all duration-300 hover:bg-primary-50">
+                            class="px-8 py-4 rounded-xl border-2 border-slate-300 text-slate-700 font-semibold text-lg hover:border-primary-600 hover:text-primary-600 transition-all duration-300 hover:bg-primary-50 animate-hover-lift">
                             View Our Work
                         </a>
                         </div>
