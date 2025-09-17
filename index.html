@@ -452,126 +452,131 @@
         </section>
 
         <!-- Solutions Dropdown -->
-        <div id="solutionsDropdown" class="hidden fixed top-16 left-0 right-0 bg-white shadow-2xl border-t border-slate-200 z-40 transform transition-all duration-300 ease-in-out opacity-0 translate-y-[-20px]">
+        <div id="solutionsDropdown" class="hidden fixed top-24 left-0 right-0 bg-white shadow-2xl border-t border-slate-200 z-40 transform transition-all duration-300 ease-in-out opacity-0 translate-y-[-20px] max-h-[calc(100vh-4rem)] overflow-y-auto">
             <!-- Backdrop overlay -->
             <div class="absolute inset-0 bg-black/5 backdrop-blur-sm"></div>
-            <div class="relative max-w-7xl mx-auto px-4 py-12">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mt-4">
-                    <!-- Technology Consulting -->
-                    <div class="space-y-4">
-                        <h3 class="text-lg font-heading font-bold text-red-600 mb-6">Technology Consulting</h3>
-                        <div class="space-y-4">
-                            <div class="bg-red-50 rounded-lg p-4 hover:bg-red-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Product Engineering</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Leverage cutting-edge technologies to deliver innovative, scalable, and market-ready solutions from ideation to launch.</p>
+            <div class="relative max-w-7xl mx-auto px-4 py-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Media Production -->
+                    <div class="space-y-3">
+                        <h3 class="text-lg font-heading font-bold text-red-600 mb-4">Media Production</h3>
+                        <div class="space-y-2">
+                            <div class="bg-red-50 rounded-lg p-3 hover:bg-red-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Corporate Films & AVs</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Professional corporate videos and audio-visual content for brand storytelling.</p>
                             </div>
-                            <div class="bg-red-50 rounded-lg p-4 hover:bg-red-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Process Engineering</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Tailored solutions to optimize and streamline business processes, enhancing efficiency, productivity, and operational performance.</p>
+                            <div class="bg-red-50 rounded-lg p-3 hover:bg-red-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Ad Films & Digital Commercials</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Creative advertising content that drives engagement and conversions.</p>
                             </div>
-                            <div class="bg-red-50 rounded-lg p-4 hover:bg-red-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Digital Infrastructure Planning</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Seamless integration of technology resources to create robust and scalable digital ecosystems.</p>
+                            <div class="bg-red-50 rounded-lg p-3 hover:bg-red-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Documentaries & Motivational Films</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Compelling storytelling through documentaries and inspirational content.</p>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Technology Building -->
-                    <div class="space-y-4">
-                        <h3 class="text-lg font-heading font-bold text-red-600 mb-6">Technology Building</h3>
-                        <div class="space-y-4">
-                            <div class="bg-red-50 rounded-lg p-4 hover:bg-red-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Web Application</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Craft innovative, user-centric solutions to drive engagement, efficiency, and business growth.</p>
+                            <div class="bg-red-50 rounded-lg p-3 hover:bg-red-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Explainer Videos & Animation</h4>
+                                <p class="text-xs text-slate-600 leading-tight">2D/3D animations and explainer videos for complex concepts.</p>
                             </div>
-                            <div class="bg-red-50 rounded-lg p-4 hover:bg-red-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Mobile Application</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Intuitive, high-performance apps across iOS & Android platforms for exceptional user experiences.</p>
+                            <div class="bg-red-50 rounded-lg p-3 hover:bg-red-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Event Coverage & Live Productions</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Professional event documentation and live streaming services.</p>
                             </div>
-                            <div class="bg-red-50 rounded-lg p-4 hover:bg-red-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">RFID System</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Track, monitor, and manage assets to enhance operational efficiency and security.</p>
-                            </div>
-                            <div class="bg-red-50 rounded-lg p-4 hover:bg-red-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Cloud DevOps</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Systems designed for rapid deployment, scalability, and reliability within cloud environments.</p>
+                            <div class="bg-red-50 rounded-lg p-3 hover:bg-red-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">OTT Shows & Web Content</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Original content for streaming platforms and web series.</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- eGovernance Solutions -->
-                    <div class="space-y-4">
-                        <h3 class="text-lg font-heading font-bold text-orange-600 mb-6">eGovernance Solutions</h3>
-                        <div class="space-y-4">
-                            <div class="bg-orange-50 rounded-lg p-4 hover:bg-orange-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">GIGW Web Portal</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Secure, user-friendly, and accessible web portals that adhere to GIGW guidelines.</p>
+                    <!-- Digital Marketing -->
+                    <div class="space-y-3">
+                        <h3 class="text-lg font-heading font-bold text-blue-600 mb-4">Digital Marketing</h3>
+                        <div class="space-y-2">
+                            <div class="bg-blue-50 rounded-lg p-3 hover:bg-blue-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Search Engine Optimization (SEO)</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Boost your online visibility and organic search rankings.</p>
                             </div>
-                            <div class="bg-orange-50 rounded-lg p-4 hover:bg-orange-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">CERT-In / STQC Audit</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Comprehensive security audits and certification compliant with CERT-In & STQC standards.</p>
+                            <div class="bg-blue-50 rounded-lg p-3 hover:bg-blue-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Performance Marketing</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Google Ads, Meta Ads, LinkedIn campaigns for maximum ROI.</p>
                             </div>
-                            <div class="bg-orange-50 rounded-lg p-4 hover:bg-orange-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Budget Management System</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Budget monitoring, digitization of demand requisitions, DSC-based approvals, and user-defined workflows.</p>
+                            <div class="bg-blue-50 rounded-lg p-3 hover:bg-blue-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Social Media Marketing</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Community building and engagement across all platforms.</p>
                             </div>
-                            <div class="bg-orange-50 rounded-lg p-4 hover:bg-orange-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Legal Case Management System</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Manage legal cases, hearings, cause lists, history, documents, and tasks in one place with dashboards and alerts.</p>
+                            <div class="bg-blue-50 rounded-lg p-3 hover:bg-blue-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Influencer & Collaboration Campaigns</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Strategic partnerships with influencers and brands.</p>
                             </div>
-                            <div class="bg-orange-50 rounded-lg p-4 hover:bg-orange-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">MEL (Monitoring, Evaluation & Learning) System</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">End-to-end scheme monitoring, evaluation, and learning for physical and financial progress.</p>
+                            <div class="bg-blue-50 rounded-lg p-3 hover:bg-blue-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Content Strategy & Creation</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Data-driven content that resonates with your audience.</p>
                             </div>
-                            <div class="bg-orange-50 rounded-lg p-4 hover:bg-orange-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">PFMS Integration</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Integrate budgeting systems with PFMS for seamless financial transactions.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- BI & Analytics -->
-                    <div class="space-y-4">
-                        <h3 class="text-lg font-heading font-bold text-blue-600 mb-6">BI & Analytics</h3>
-                        <div class="space-y-4">
-                            <div class="bg-blue-50 rounded-lg p-4 hover:bg-blue-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Analytical Dashboards</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Develop inferences from existing data to present meaningful information and insights.</p>
-                            </div>
-                            <div class="bg-blue-50 rounded-lg p-4 hover:bg-blue-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Data Visualization</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Visualize data intuitively using graphical dashboards, charts, and graphs for easy understanding.</p>
-                            </div>
-                            <div class="bg-blue-50 rounded-lg p-4 hover:bg-blue-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Decision Support Systems</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Process multiple datasets to create an ecosystem providing management with clear business visibility.</p>
+                            <div class="bg-blue-50 rounded-lg p-3 hover:bg-blue-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Analytics & Growth Reporting</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Comprehensive insights and performance tracking.</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- AI & IoT -->
-                    <div class="space-y-4">
-                        <h3 class="text-lg font-heading font-bold text-red-600 mb-6">AI & IoT</h3>
-                        <div class="space-y-4">
-                            <div class="bg-red-50 rounded-lg p-4 hover:bg-red-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">LLM Model Integration (ChatGPT)</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Utilize OpenAI & other open-source platforms for building LLM solutions.</p>
+                    <!-- IT Services -->
+                    <div class="space-y-3">
+                        <h3 class="text-lg font-heading font-bold text-green-600 mb-4">IT Services</h3>
+                        <div class="space-y-2">
+                            <div class="bg-green-50 rounded-lg p-3 hover:bg-green-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Website Design & Development</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Custom websites that drive engagement and conversions.</p>
                             </div>
-                            <div class="bg-red-50 rounded-lg p-4 hover:bg-red-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">ChatBot</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Help customers with 24x7 chatbots.</p>
+                            <div class="bg-green-50 rounded-lg p-3 hover:bg-green-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Mobile App Development</h4>
+                                <p class="text-xs text-slate-600 leading-tight">iOS, Android, and hybrid apps for all platforms.</p>
                             </div>
-                            <div class="bg-red-50 rounded-lg p-4 hover:bg-red-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Industry 4.0</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Use IoT, cloud computing, and smart devices for efficient production systems.</p>
+                            <div class="bg-green-50 rounded-lg p-3 hover:bg-green-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Custom Software & ERP/CRM</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Tailored business solutions for operational efficiency.</p>
                             </div>
-                            <div class="bg-red-50 rounded-lg p-4 hover:bg-red-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">Machine Learning</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Track vehicles and equipment from cradle to grave.</p>
+                            <div class="bg-green-50 rounded-lg p-3 hover:bg-green-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">UI/UX Design</h4>
+                                <p class="text-xs text-slate-600 leading-tight">User-centered design for exceptional digital experiences.</p>
                             </div>
-                            <div class="bg-red-50 rounded-lg p-4 hover:bg-red-100 transition-colors cursor-pointer">
-                                <h4 class="font-semibold text-slate-800 mb-2 text-sm">IoT</h4>
-                                <p class="text-xs text-slate-600 leading-relaxed">Track vehicles and equipment from cradle to grave.</p>
+                            <div class="bg-green-50 rounded-lg p-3 hover:bg-green-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Cybersecurity Solutions</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Protect your digital assets with advanced security measures.</p>
+                            </div>
+                            <div class="bg-green-50 rounded-lg p-3 hover:bg-green-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">AI/ML & Big Data Analytics</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Leverage artificial intelligence for business insights.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Studio Rental -->
+                    <div class="space-y-3">
+                        <h3 class="text-lg font-heading font-bold text-purple-600 mb-4">Studio Rental</h3>
+                        <div class="space-y-2">
+                            <div class="bg-purple-50 rounded-lg p-3 hover:bg-purple-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Spacious Shooting Floor</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Professional studio space for all types of productions.</p>
+                            </div>
+                            <div class="bg-purple-50 rounded-lg p-3 hover:bg-purple-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Green Screen / Chroma Setup</h4>
+                                <p class="text-xs text-slate-600 leading-tight">State-of-the-art chroma key facilities for VFX work.</p>
+                            </div>
+                            <div class="bg-purple-50 rounded-lg p-3 hover:bg-purple-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Professional Lighting & Rigging</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Complete lighting setup for professional video production.</p>
+                            </div>
+                            <div class="bg-purple-50 rounded-lg p-3 hover:bg-purple-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Camera Gear & Crew Support</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Professional equipment and technical support available.</p>
+                            </div>
+                            <div class="bg-purple-50 rounded-lg p-3 hover:bg-purple-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Live Streaming Ready</h4>
+                                <p class="text-xs text-slate-600 leading-tight">High-speed internet and streaming capabilities.</p>
+                            </div>
+                            <div class="bg-purple-50 rounded-lg p-3 hover:bg-purple-100 transition-colors cursor-pointer">
+                                <h4 class="font-semibold text-slate-800 mb-1 text-sm">Makeup & Dressing Rooms</h4>
+                                <p class="text-xs text-slate-600 leading-tight">Complete facilities for talent preparation and comfort.</p>
                             </div>
                         </div>
                     </div>
